@@ -13,6 +13,7 @@
     "future_release": "July, 2026",
     "key_statistics": "Vital Statistics related to Infant Deaths",
     "remarks": "Based on CRS registered deaths with medically certified causes; completeness depends on MCCD coverage and registration quality",
+    "metadata_excel": "infant-mother-metadata-v3.xlsx",
     "catalog_metadata_tab": {
       "product": "Infant_&_Maternal_Mortality_Data",
       "category": "Vital Statistics",

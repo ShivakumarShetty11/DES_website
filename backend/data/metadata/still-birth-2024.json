@@ -13,6 +13,7 @@
     "future_release": "July, 2026",
     "key_statistics": "Vital Statistics related to Still Births",
     "remarks": "Based on CRS registered Still Births",
+    "metadata_excel": "still-birth-metadata-v3.xlsx",
     "catalog_metadata_tab": {
       "product": "Still_Birth_Data",
       "category": "Vital Statistics",

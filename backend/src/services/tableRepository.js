@@ -120,7 +120,16 @@ async function getTableById(datasetId) {
   );
 }
 
+async function getMetadataExcelPath(metadataId) {
+  const metadataMap = await getMetadataMap();
+  const record = metadataMap.get(normalizeId(metadataId));
+  const filename = record?.metadata?.metadata_excel;
+  if (!filename) return null;
+  return path.join(METADATA_DIR, filename);
+}
+
 module.exports = {
   getTableSummaries,
-  getTableById
+  getTableById,
+  getMetadataExcelPath
 };

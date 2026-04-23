@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:4000/api";
+const API_BASE = "/api";
 
 const elements = {
   datasetStream: document.getElementById("datasetStream"),
@@ -72,6 +72,7 @@ function renderDatasets(results) {
 function renderDatasetRow(data, key, query) {
   const allRows = data?.table?.rows || [];
   const { dataset, classifications, concepts } = data;
+  const metadataExcel = data?.metadata?.metadata_excel || null;
 
   return `
     <section class="dataset-row" data-dataset-key="${key}">
@@ -92,6 +93,7 @@ function renderDatasetRow(data, key, query) {
         <div class="action-row">
           <button class="btn btn-secondary panel-btn" data-dataset-key="${key}" data-view="catalog" aria-pressed="false">Meta Data Summary</button>
           <button class="btn btn-primary panel-btn" data-dataset-key="${key}" data-view="download" aria-pressed="false">Download Dataset</button>
+          ${metadataExcel ? `<button class="btn btn-secondary download-metadata-btn" data-metadata-id="${escapeHtml(dataset.metadata_id)}">Download Metadata</button>` : ""}
         </div>
 
         <section class="inline-panel" id="panel-${key}">
@@ -156,6 +158,17 @@ function attachEventHandlers() {
         return;
       }
       downloadExcel(data.table.rows || [], data);
+    });
+  });
+
+  document.querySelectorAll(".download-metadata-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      const metadataId = button.dataset.metadataId;
+      const url = `${API_BASE}/metadata/${encodeURIComponent(metadataId)}/download`;
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "";
+      anchor.click();
     });
   });
 

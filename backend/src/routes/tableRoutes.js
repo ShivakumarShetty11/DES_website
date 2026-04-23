@@ -1,7 +1,9 @@
 const express = require("express");
+const path = require("path");
 const {
   getTableSummaries,
-  getTableById
+  getTableById,
+  getMetadataExcelPath
 } = require("../services/tableRepository");
 
 const router = express.Router();
@@ -28,6 +30,22 @@ router.get("/tables/:datasetId", async (req, res, next) => {
       return;
     }
     res.json(table);
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.get("/metadata/:metadataId/download", async (req, res, next) => {
+  try {
+    const filePath = await getMetadataExcelPath(req.params.metadataId);
+    if (!filePath) {
+      res.status(404).json({ message: `No metadata file for: ${req.params.metadataId}` });
+      return;
+    }
+    const filename = path.basename(filePath);
+    res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
+    res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+    res.sendFile(filePath);
   } catch (error) {
     next(error);
   }

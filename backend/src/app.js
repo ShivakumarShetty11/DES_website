@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const tableRoutes = require("./routes/tableRoutes");
 
 const app = express();
@@ -14,6 +15,8 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api", tableRoutes);
+
+app.use(express.static(path.join(__dirname, "..", "..", "frontend", "public")));
 
 app.use((error, _req, res, _next) => {
   console.error(error);
