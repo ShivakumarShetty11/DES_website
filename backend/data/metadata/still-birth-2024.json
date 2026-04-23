@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "metadata_id": "DELHI-STILL-BIRTH-2024",
+    "title": "Still Birth metadata",
+    "description": "Analysis of Number of Still Births in respect of GNCTD for year 2024",
+    "product": "Still_Birth_Data",
+    "category": "Vital Statistics",
+    "geography": "National Capital Territory (NCT) of Delhi",
+    "frequency": "Annually",
+    "time_period": "Year, 2024",
+    "data_source": "Civil Registration System (CRS) - Still Births registration records",
+    "last_updated_date": "July, 2025",
+    "future_release": "July, 2026",
+    "key_statistics": "Vital Statistics related to Still Births",
+    "remarks": "Based on CRS registered Still Births",
+    "catalog_metadata_tab": {
+      "product": "Still_Birth_Data",
+      "category": "Vital Statistics",
+      "geography": "National Capital Territory (NCT) of Delhi",
+      "frequency": "Annually",
+      "time_period": "Year, 2024",
+      "data_source": "Civil Registration System (CRS) - Still Births registration records",
+      "description": "Analysis of Number of Still Births in respect of GNCTD for year 2024",
+      "last_updated_date": "July, 2025",
+      "future_release": "July, 2026",
+      "key_statistics": "Vital Statistics related to Still Births",
+      "remarks": "Based on CRS registered Still Births"
+    },
+    "table_ids": [
+      "T-01",
+      "T-02"
+    ],
+    "dataset_inventory_list": [
+      {
+        "dataset_id": "T-01",
+        "table_id": "T-01",
+        "title": "Still Birth by Place of Occurrence in District (Urban)",
+        "short_description": "District-wise urban still births classified by institutional, domiciliary, and combined totals with sex disaggregation.",
+        "long_description": "Pilot dataset for DES cataloging portal. Structure inspired by GDC-style downloadable tabular data pages."
+      },
+      {
+        "dataset_id": "T-02",
+        "table_id": "T-02",
+        "title": "Still Birth by Place of Occurrence in District (Rural)",
+        "short_description": "District-wise rural still births classified by institutional, domiciliary, and combined totals with sex disaggregation.",
+        "long_description": "Second pilot dataset to validate scalable backend-table architecture and frontend dataset switching."
+      }
+    ]
+  },
+  "classifications": {
+    "local_district_bodies": [
+      "MCD (Municipal Corporation of Delhi)",
+      "NDMC (New Delhi Municipal Council)",
+      "DELHI CANTT (Delhi Cantonment Board)"
+    ],
+    "area_classification": [
+      "Urban",
+      "Rural"
+    ],
+    "gender_classification": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "place_of_occurrence": [
+      "Institutional",
+      "Domiciliary",
+      "All"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>DES Data Catalog</title>
+    <meta
+      name="description"
+      content="DES data catalog frontend with API-driven datasets and scalable table browsing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260422-8" />
+  </head>
+  <body>
+    <header class="topnav">
+      <span class="topnav-title">Catalog Explorer</span>
+      <div class="topnav-divider"></div>
+      <div class="topnav-db">
+        <span class="topnav-db-label">Database</span>
+        <select class="topnav-db-select">
+          <option>DES — Delhi Vital Statistics</option>
+        </select>
+      </div>
+    </header>
+    <main class="layout">
+      <section class="card query-panel" id="queryPanel">
+        <p class="search-label">Search Datasets</p>
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="8.5" cy="8.5" r="5.5"/>
+              <line x1="13" y1="13" x2="18" y2="18"/>
+            </svg>
+            <input id="queryInput" type="search" placeholder="Search by table id, title, district, cause, occupation..." />
+          </div>
+          <button id="clearQueryBtn" class="btn btn-clear" type="button">Clear</button>
+        </div>
+        <p class="query-result" id="queryResult">Showing all datasets</p>
+      </section>
+
+      <section class="content-panel">
+        <section id="datasetStream" class="dataset-stream"></section>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="app.js?v=20260422-11" type="module"></script>
+  </body>
+</html>

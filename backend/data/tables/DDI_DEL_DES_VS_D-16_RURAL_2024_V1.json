@@ -1,0 +1,116 @@
+{
+  "dataset": {
+    "dataset_id": "T-09",
+    "unique_dataset_id": "DDI_DEL_DES_VS_D-16_RURAL_2024_V1",
+    "table_id": "T-09",
+    "metadata_id": "DELHI-MEDICAL-CAUSE-2024",
+    "title": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED OR NOT DEATHS (RURAL)",
+    "short_description": "Pregnancy related deaths by age of mother and cause (rural; medically certified or not).",
+    "long_description": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED OR NOT DEATHS (RURAL). Imported from 2024 Delhi Birth and Death registration workbook."
+  },
+  "classifications": {
+    "area_classification": [
+      "Rural"
+    ],
+    "cause_of_death": [
+      "O00-O08",
+      "O10-O92",
+      "O95-O99"
+    ],
+    "age_group_mother": [
+      "< 15 yr",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45 AND ABOVE",
+      "All"
+    ]
+  },
+  "concepts": [
+    "Contact",
+    "Data description and Presentation",
+    "Institutional Mandate",
+    "Quality Management",
+    "Accuracy and Reliability",
+    "Timeliness",
+    "Coherence/Comparability",
+    "Data Processing",
+    "Metadata Update"
+  ],
+  "table": {
+    "units": "Count",
+    "rows": [
+      {
+        "sl_no": 1,
+        "district": "PREGNANCY, WITH ABORTIVE OUTCOME",
+        "row_type": "cause",
+        "cause_code": "O00-O08",
+        "age_of_mother": {
+          "lt_15_yr": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 2,
+          "30_34": 1,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 3
+        }
+      },
+      {
+        "sl_no": 2,
+        "district": "OTHER DIRECT OBSTRIC DEATHS",
+        "row_type": "cause",
+        "cause_code": "O10-O92",
+        "age_of_mother": {
+          "lt_15_yr": 0,
+          "15_19": 1,
+          "20_24": 4,
+          "25_29": 8,
+          "30_34": 6,
+          "35_39": 2,
+          "40_44": 0,
+          "45_and_above": 1,
+          "all": 22
+        }
+      },
+      {
+        "sl_no": 3,
+        "district": "OTHER OBSTRIC CONDITIONS N.E.C.",
+        "row_type": "cause",
+        "cause_code": "O95-O99",
+        "age_of_mother": {
+          "lt_15_yr": 0,
+          "15_19": 0,
+          "20_24": 11,
+          "25_29": 14,
+          "30_34": 6,
+          "35_39": 1,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 32
+        }
+      },
+      {
+        "sl_no": "",
+        "district": "ALL",
+        "row_type": "summary",
+        "cause_code": "",
+        "age_of_mother": {
+          "lt_15_yr": 0,
+          "15_19": 1,
+          "20_24": 15,
+          "25_29": 24,
+          "30_34": 13,
+          "35_39": 3,
+          "40_44": 0,
+          "45_and_above": 1,
+          "all": 57
+        }
+      }
+    ]
+  }
+}

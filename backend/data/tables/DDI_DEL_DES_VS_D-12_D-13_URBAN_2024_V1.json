@@ -1,0 +1,136 @@
+{
+  "dataset": {
+    "dataset_id": "T-03",
+    "unique_dataset_id": "DDI_DEL_DES_VS_D-12_D-13_URBAN_2024_V1",
+    "table_id": "T-03",
+    "metadata_id": "DELHI-MEDICAL-CAUSE-2024",
+    "title": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (URBAN)",
+    "short_description": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (URBAN) with sex-wise counts across place of occurrence.",
+    "long_description": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (URBAN). Imported from 2024 Delhi Birth and Death registration workbook."
+  },
+  "classifications": {
+    "districts": [
+      "MCD",
+      "NDMC",
+      "DELHI CANTT"
+    ],
+    "gender_classification": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "place_of_occurrence": [
+      "Institutional",
+      "Domiciliary",
+      "All"
+    ]
+  },
+  "concepts": [
+    "Contact",
+    "Data description and Presentation",
+    "Institutional Mandate",
+    "Quality Management",
+    "Accuracy and Reliability",
+    "Timeliness",
+    "Coherence/Comparability",
+    "Data Processing",
+    "Metadata Update"
+  ],
+  "table": {
+    "units": "Count",
+    "rows": [
+      {
+        "sl_no": 1,
+        "district": "MCD",
+        "row_type": "district",
+        "institutional": {
+          "male": 2241,
+          "female": 1624,
+          "other": 6,
+          "total": 3871
+        },
+        "domiciliary": {
+          "male": 14,
+          "female": 20,
+          "other": 0,
+          "total": 34
+        },
+        "all": {
+          "male": 2255,
+          "female": 1644,
+          "other": 6,
+          "total": 3905
+        }
+      },
+      {
+        "sl_no": 2,
+        "district": "NDMC",
+        "row_type": "district",
+        "institutional": {
+          "male": 703,
+          "female": 542,
+          "other": 1,
+          "total": 1246
+        },
+        "domiciliary": {
+          "male": 0,
+          "female": 0,
+          "other": 0,
+          "total": 0
+        },
+        "all": {
+          "male": 703,
+          "female": 542,
+          "other": 1,
+          "total": 1246
+        }
+      },
+      {
+        "sl_no": 3,
+        "district": "DELHI CANTT",
+        "row_type": "district",
+        "institutional": {
+          "male": 51,
+          "female": 23,
+          "other": 0,
+          "total": 74
+        },
+        "domiciliary": {
+          "male": 0,
+          "female": 0,
+          "other": 0,
+          "total": 0
+        },
+        "all": {
+          "male": 51,
+          "female": 23,
+          "other": 0,
+          "total": 74
+        }
+      },
+      {
+        "sl_no": "",
+        "district": "ALL",
+        "row_type": "summary",
+        "institutional": {
+          "male": 2995,
+          "female": 2189,
+          "other": 7,
+          "total": 5191
+        },
+        "domiciliary": {
+          "male": 14,
+          "female": 20,
+          "other": 0,
+          "total": 34
+        },
+        "all": {
+          "male": 3009,
+          "female": 2209,
+          "other": 7,
+          "total": 5225
+        }
+      }
+    ]
+  }
+}

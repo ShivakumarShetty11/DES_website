@@ -1,0 +1,214 @@
+{
+  "dataset": {
+    "dataset_id": "T-11",
+    "unique_dataset_id": "DDI_DEL_DES_VS_D-18_RURAL_2024_V1",
+    "table_id": "T-11",
+    "metadata_id": "DELHI-MEDICAL-CAUSE-2024",
+    "title": "PREGNANCY RELATED DEATHS BY AGE AND OCCUPATION (RURAL)",
+    "short_description": "Pregnancy related deaths by age group and occupation (rural).",
+    "long_description": "PREGNANCY RELATED DEATHS BY AGE AND OCCUPATION (RURAL). Imported from 2024 Delhi Birth and Death registration workbook."
+  },
+  "classifications": {
+    "area_classification": [
+      "Rural"
+    ],
+    "occupation": [
+      "PROFESSIONAL / TECHNICAL RELATED WORKERS",
+      "ADMINISTRATIVE, EXECUTIVE AND MANAGERIAL WORKERS",
+      "CLERICAL WORKERS",
+      "SALE WORKERS",
+      "SERVICE WORKERS",
+      "FARMERS,FISHERMEN,HUNTERS etc",
+      "PRODUCTION AND OTHER RELATED WORKERS",
+      "HOUSEWIFE / NON WORKERS",
+      "OTHERS/NOT STATED"
+    ],
+    "age_group_mother": [
+      "<15",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45 AND ABOVE",
+      "All"
+    ]
+  },
+  "concepts": [
+    "Contact",
+    "Data description and Presentation",
+    "Institutional Mandate",
+    "Quality Management",
+    "Accuracy and Reliability",
+    "Timeliness",
+    "Coherence/Comparability",
+    "Data Processing",
+    "Metadata Update"
+  ],
+  "table": {
+    "units": "Count",
+    "rows": [
+      {
+        "sl_no": 1,
+        "district": "PROFESSIONAL / TECHNICAL RELATED WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 2,
+        "district": "ADMINISTRATIVE, EXECUTIVE AND MANAGERIAL WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 3,
+        "district": "CLERICAL WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 4,
+        "district": "SALE WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 5,
+        "district": "SERVICE WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 6,
+        "district": "FARMERS,FISHERMEN,HUNTERS etc",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 7,
+        "district": "PRODUCTION AND OTHER RELATED WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 0,
+          "30_34": 0,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 0
+        }
+      },
+      {
+        "sl_no": 8,
+        "district": "HOUSEWIFE / NON WORKERS",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 0,
+          "20_24": 0,
+          "25_29": 1,
+          "30_34": 2,
+          "35_39": 0,
+          "40_44": 0,
+          "45_and_above": 0,
+          "all": 3
+        }
+      },
+      {
+        "sl_no": 9,
+        "district": "OTHERS/NOT STATED",
+        "row_type": "occupation",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 1,
+          "20_24": 15,
+          "25_29": 23,
+          "30_34": 11,
+          "35_39": 3,
+          "40_44": 0,
+          "45_and_above": 1,
+          "all": 54
+        }
+      },
+      {
+        "sl_no": "",
+        "district": "All",
+        "row_type": "summary",
+        "age_group": {
+          "lt_15": 0,
+          "15_19": 1,
+          "20_24": 15,
+          "25_29": 24,
+          "30_34": 13,
+          "35_39": 3,
+          "40_44": 0,
+          "45_and_above": 1,
+          "all": 57
+        }
+      }
+    ]
+  }
+}

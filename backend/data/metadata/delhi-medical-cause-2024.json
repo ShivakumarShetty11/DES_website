@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "metadata_id": "DELHI-MEDICAL-CAUSE-2024",
+    "title": "Death Rates Medical Cause metadata",
+    "description": "Analysis of infant death Statistics in respect of GNCTD for year 2024",
+    "product": "Infant_&_Maternal_Mortality_Data",
+    "category": "Vital Statistics",
+    "geography": "National Capital Territory (NCT) of Delhi",
+    "frequency": "Annually",
+    "time_period": "Year, 2024",
+    "data_source": "Civil Registration System (CRS) - Infant death data and maternal death data registration records with medically certified cause of death",
+    "last_updated_date": "July, 2025",
+    "future_release": "July, 2026",
+    "key_statistics": "Vital Statistics related to Infant Deaths",
+    "remarks": "Based on CRS registered deaths with medically certified causes; completeness depends on MCCD coverage and registration quality",
+    "catalog_metadata_tab": {
+      "product": "Infant_&_Maternal_Mortality_Data",
+      "category": "Vital Statistics",
+      "geography": "National Capital Territory (NCT) of Delhi",
+      "frequency": "Annually",
+      "time_period": "Year, 2024",
+      "data_source": "Civil Registration System (CRS) - Infant death data and maternal death data registration records with medically certified cause of death",
+      "description": "Analysis of infant death Statistics in respect of GNCTD for year 2024",
+      "last_updated_date": "July, 2025",
+      "future_release": "July, 2026",
+      "key_statistics": "Vital Statistics related to Infant Deaths",
+      "remarks": "Based on CRS registered deaths with medically certified causes; completeness depends on MCCD coverage and registration quality"
+    },
+    "table_ids": [
+      "T-03",
+      "T-04",
+      "T-05",
+      "T-06",
+      "T-07",
+      "T-08",
+      "T-09",
+      "T-10",
+      "T-11"
+    ],
+    "dataset_inventory_list": [
+      {
+        "dataset_id": "T-03",
+        "table_id": "T-03",
+        "title": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (URBAN)",
+        "short_description": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (URBAN) with sex-wise counts across place of occurrence.",
+        "long_description": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (URBAN). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-04",
+        "table_id": "T-04",
+        "title": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (RURAL)",
+        "short_description": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (RURAL) with sex-wise counts across place of occurrence.",
+        "long_description": "INFANT DEATHS BY PLACE OF OCCURRENCE, DISTRICTS (RURAL). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-05",
+        "table_id": "T-05",
+        "title": "INFANTS DEATHS BY AGE AND SEX",
+        "short_description": "Infant deaths by age and sex for urban, rural and all areas.",
+        "long_description": "INFANTS DEATHS BY AGE AND SEX. Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-06",
+        "table_id": "T-06",
+        "title": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED DEATHS (URBAN)",
+        "short_description": "Pregnancy related deaths by age of mother and cause (urban).",
+        "long_description": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED DEATHS (URBAN). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-07",
+        "table_id": "T-07",
+        "title": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED DEATHS (RURAL)",
+        "short_description": "Pregnancy related deaths by age of mother and cause (rural).",
+        "long_description": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED DEATHS (RURAL). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-08",
+        "table_id": "T-08",
+        "title": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED OR NOT DEATHS (URBAN)",
+        "short_description": "Pregnancy related deaths by age of mother and cause (urban; medically certified or not).",
+        "long_description": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED OR NOT DEATHS (URBAN). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-09",
+        "table_id": "T-09",
+        "title": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED OR NOT DEATHS (RURAL)",
+        "short_description": "Pregnancy related deaths by age of mother and cause (rural; medically certified or not).",
+        "long_description": "PREGNANCY RELATED DEATHS BY AGE GROUP OF THE DECEASED (MOTHER) AND CAUSE OF DEATH FOR MEDICALLY CERTIFIED OR NOT DEATHS (RURAL). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-10",
+        "table_id": "T-10",
+        "title": "PREGNANCY RELATED DEATHS BY AGE AND OCCUPATION (URBAN)",
+        "short_description": "Pregnancy related deaths by age group and occupation (urban).",
+        "long_description": "PREGNANCY RELATED DEATHS BY AGE AND OCCUPATION (URBAN). Imported from 2024 Delhi Birth and Death registration workbook."
+      },
+      {
+        "dataset_id": "T-11",
+        "table_id": "T-11",
+        "title": "PREGNANCY RELATED DEATHS BY AGE AND OCCUPATION (RURAL)",
+        "short_description": "Pregnancy related deaths by age group and occupation (rural).",
+        "long_description": "PREGNANCY RELATED DEATHS BY AGE AND OCCUPATION (RURAL). Imported from 2024 Delhi Birth and Death registration workbook."
+      }
+    ]
+  },
+  "classifications": {
+    "area_classification": [
+      "Urban",
+      "Rural"
+    ],
+    "gender_classification": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "place_of_occurrence": [
+      "Institutional",
+      "Domiciliary",
+      "All"
+    ],
+    "age_group_mother": [
+      "< 15 yr",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45 AND ABOVE"
+    ]
+  }
+}

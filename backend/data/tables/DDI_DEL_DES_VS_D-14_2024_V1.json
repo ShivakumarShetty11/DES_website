@@ -1,0 +1,136 @@
+{
+  "dataset": {
+    "dataset_id": "T-05",
+    "unique_dataset_id": "DDI_DEL_DES_VS_D-14_2024_V1",
+    "table_id": "T-05",
+    "metadata_id": "DELHI-MEDICAL-CAUSE-2024",
+    "title": "INFANTS DEATHS BY AGE AND SEX",
+    "short_description": "Infant deaths by age and sex for urban, rural and all areas.",
+    "long_description": "INFANTS DEATHS BY AGE AND SEX. Imported from 2024 Delhi Birth and Death registration workbook."
+  },
+  "classifications": {
+    "age_groups": [
+      "< 7 DAYS",
+      "7-28 DAYS",
+      "28 DAYS TO 1 YEAR"
+    ],
+    "area_classification": [
+      "Urban",
+      "Rural",
+      "All"
+    ],
+    "gender_classification": [
+      "Male",
+      "Female",
+      "Other"
+    ]
+  },
+  "concepts": [
+    "Contact",
+    "Data description and Presentation",
+    "Institutional Mandate",
+    "Quality Management",
+    "Accuracy and Reliability",
+    "Timeliness",
+    "Coherence/Comparability",
+    "Data Processing",
+    "Metadata Update"
+  ],
+  "table": {
+    "units": "Count",
+    "rows": [
+      {
+        "sl_no": 1,
+        "district": "< 7 DAYS",
+        "row_type": "age_group",
+        "urban": {
+          "male": 1507,
+          "female": 1056,
+          "other": 7,
+          "total": 2570
+        },
+        "rural": {
+          "male": 394,
+          "female": 238,
+          "other": 1,
+          "total": 633
+        },
+        "all": {
+          "male": 1901,
+          "female": 1294,
+          "other": 8,
+          "total": 3203
+        }
+      },
+      {
+        "sl_no": 2,
+        "district": "7-28 DAYS",
+        "row_type": "age_group",
+        "urban": {
+          "male": 521,
+          "female": 377,
+          "other": 0,
+          "total": 898
+        },
+        "rural": {
+          "male": 145,
+          "female": 83,
+          "other": 0,
+          "total": 228
+        },
+        "all": {
+          "male": 666,
+          "female": 460,
+          "other": 0,
+          "total": 1126
+        }
+      },
+      {
+        "sl_no": 3,
+        "district": "28 DAYS TO 1 YEAR",
+        "row_type": "age_group",
+        "urban": {
+          "male": 981,
+          "female": 776,
+          "other": 0,
+          "total": 1757
+        },
+        "rural": {
+          "male": 484,
+          "female": 295,
+          "other": 1,
+          "total": 780
+        },
+        "all": {
+          "male": 1465,
+          "female": 1071,
+          "other": 1,
+          "total": 2537
+        }
+      },
+      {
+        "sl_no": "",
+        "district": "ALL",
+        "row_type": "summary",
+        "urban": {
+          "male": 3009,
+          "female": 2209,
+          "other": 7,
+          "total": 5225
+        },
+        "rural": {
+          "male": 1023,
+          "female": 616,
+          "other": 2,
+          "total": 1641
+        },
+        "all": {
+          "male": 4032,
+          "female": 2825,
+          "other": 9,
+          "total": 6866
+        }
+      }
+    ]
+  }
+}
