@@ -104,9 +104,12 @@ async function getTableSummaries() {
     dataset_id: record?.dataset?.dataset_id,
     table_id: record?.dataset?.table_id,
     title: record?.dataset?.title,
+    description: record?.metadata?.description || record?.dataset?.description || null,
     category: record?.dataset?.category,
     geography: record?.dataset?.geography,
     frequency: record?.dataset?.frequency,
+    time_period: record?.dataset?.time_period || null,
+    data_source: record?.dataset?.data_source || null,
     metadata_id: record?.dataset?.metadata_id,
     metadata_title: record?.metadata?.title || null
   }));
