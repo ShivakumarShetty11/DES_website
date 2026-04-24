@@ -20,7 +20,11 @@ app.get("/api/health", (_req, res) => {
 app.use("/api", tableRoutes);
 app.use("/", publicRoutes);
 
-app.use(express.static(path.join(__dirname, "..", "..", "frontend", "public")));
+app.use(express.static(path.join(__dirname, "..", "..", "frontend", "public"), {
+  setHeaders(res) {
+    res.setHeader("Link", '</api>; rel="api", </llms.txt>; rel="describedby"');
+  }
+}));
 
 app.use((error, _req, res, _next) => {
   console.error(error);

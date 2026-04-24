@@ -131,8 +131,15 @@ async function getMetadataExcelPath(metadataId) {
   return path.join(METADATA_DIR, filename);
 }
 
+async function getMetadataById(metadataId) {
+  const metadataMap = await getMetadataMap();
+  return metadataMap.get(normalizeId(metadataId)) || null;
+}
+
 module.exports = {
   getTableSummaries,
   getTableById,
+  getAllMetadata,
+  getMetadataById,
   getMetadataExcelPath
 };
