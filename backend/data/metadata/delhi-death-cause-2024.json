@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "metadata_id": "DELHI-DEATH-CAUSE-2024",
+    "title": "Death Rates by Medical Cause metadata",
+    "description": "Analysis of death statistics by medical cause in respect of GNCTD for year 2024",
+    "product": "Death_Data",
+    "category": "Vital Statistics",
+    "geography": "National Capital Territory (NCT) of Delhi",
+    "frequency": "Annually",
+    "time_period": "Year, 2024",
+    "data_source": "Civil Registration System (CRS) - death registration records with medically certified cause of death",
+    "last_updated_date": "July, 2025",
+    "future_release": "July, 2026",
+    "key_statistics": "Vital Statistics related to Deaths by Cause",
+    "remarks": "Based on CRS registered deaths with medically certified causes; completeness depends on MCCD coverage and registration quality",
+    "metadata_excel": "death_rates_medical_cause_meta_data_file v3.xlsx",
+    "catalog_metadata_tab": {
+      "product": "Death_Data",
+      "category": "Vital Statistics",
+      "geography": "National Capital Territory (NCT) of Delhi",
+      "frequency": "Annually",
+      "time_period": "Year, 2024",
+      "data_source": "Civil Registration System (CRS) - death registration records with medically certified cause of death",
+      "description": "Analysis of death statistics by medical cause in respect of GNCTD for year 2024",
+      "last_updated_date": "July, 2025",
+      "future_release": "July, 2026",
+      "key_statistics": "Vital Statistics related to Deaths by Cause",
+      "remarks": "Based on CRS registered deaths with medically certified causes; completeness depends on MCCD coverage and registration quality"
+    },
+    "table_ids": [
+      "D-10",
+      "D-11"
+    ],
+    "dataset_inventory_list": [
+      {
+        "dataset_id": "D-10",
+        "table_id": "D-10",
+        "title": "DEATHS BY CAUSE OF DEATHS, AGE AND SEX FOR ALL DEATHS (MEDICALLY CERTIFIED OR NOT)",
+        "short_description": "Deaths by cause of deaths, age and sex for all deaths (medically certified or not) in Delhi, 2024.",
+        "long_description": "Deaths by cause of deaths, age and sex for all deaths (medically certified or not). Imported from 2024 Delhi Birth and Death registration workbook, Table D-10."
+      },
+      {
+        "dataset_id": "D-11",
+        "table_id": "D-11",
+        "title": "DEATHS BY CAUSE OF DEATHS, AGE AND SEX FOR MEDICALLY CERTIFIED DEATHS",
+        "short_description": "Deaths by cause of deaths, age and sex for medically certified deaths in Delhi, 2024. Detailed ICD-10 breakdown.",
+        "long_description": "Deaths by cause of deaths, age and sex for medically certified deaths only. Hierarchical breakdown by ICD-10 major categories, sub-categories and specific diseases. Imported from 2024 Delhi Birth and Death registration workbook, Table D-11."
+      }
+    ]
+  },
+  "classifications": {
+    "cause_of_death_icd10": [
+      "Certain Infectious and Parasitic Diseases (A00-B99)",
+      "Neoplasms (C00-D48)",
+      "Diseases of the Blood & Blood Forming Organs and Certain Disorders Involving the Immune Mechanism (D50-D89)",
+      "Endocrine, Nutritional and Metabolic Diseases (E00-E90)",
+      "Mental and Behavioural Disorders (F01-F99)",
+      "Diseases of the Nervous System (G00-G98)",
+      "Diseases of the Eye and Adnexa (H00-H59)",
+      "Diseases of the Ear and Mastoid Process (H60-H95)",
+      "Diseases of the Circulatory System (I00-I99)",
+      "Diseases of the Respiratory System (J00-J98)",
+      "Diseases of the Digestive System (K00-K92)",
+      "Diseases of the Skin and Subcutaneous Tissue (L00-L98)",
+      "Diseases of the Musculoskeletal System Connective Tissue (M00-M99)",
+      "Diseases of the Genitourinary System (N00-N99)",
+      "Pregnancy, Childbirth and the Puerperium (O00-O99)",
+      "Certain Conditions Originating in the Perinatal Period (P00-P96)",
+      "Congenital Malformations, Deformations & Chromosomal Abnormalities (Q00-Q99)",
+      "Symptoms, Signs and Abnormal Clinical & Laboratory Findings N.E.C. (R00-R99)",
+      "Injury, Poisoning and Certain Other Consequences of External Causes (S00-T98)",
+      "External Causes of Morbidity and Mortality (V01-Y89)",
+      "Codes for Special Purposes (U00-U49)"
+    ],
+    "gender_classification": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "age_groups": [
+      "<1",
+      "1-4",
+      "5-14",
+      "15-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-69",
+      ">=70",
+      "Not Stated"
+    ]
+  },
+  "concepts": [
+    "Contact",
+    "Data description and Presentation",
+    "Institutional Mandate",
+    "Quality Management",
+    "Accuracy and Reliability",
+    "Timeliness",
+    "Coherence/Comparability",
+    "Data Processing",
+    "Metadata Update"
+  ]
+}

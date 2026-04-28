@@ -361,13 +361,18 @@ function getDatasetKey(datasetId) {
 }
 
 function flattenRow(row) {
-  const record = { sl_no: row.sl_no, district: row.district, row_type: row.row_type };
+  const record = {};
   Object.entries(row).forEach(([key, value]) => {
-    if (key === "sl_no" || key === "district" || key === "row_type") return;
-    if (value && typeof value === "object" && !Array.isArray(value)) {
+    if (value === null || value === undefined) {
+      record[key] = "";
+    } else if (Array.isArray(value)) {
+      record[key] = value.join(", ");
+    } else if (typeof value === "object") {
       Object.entries(value).forEach(([sub, v]) => {
         record[`${key}_${sub}`] = v ?? "";
       });
+    } else {
+      record[key] = value;
     }
   });
   return record;

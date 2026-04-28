@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(grep -E '\\\\.\\(js|json|html|css\\)$')",
-      "Bash(git -C \"/c/Users/SHIVA KUMAR/Documents/internship/DES_website\" ls-files backend/node_modules)"
+      "Bash(git -C \"/c/Users/SHIVA KUMAR/Documents/internship/DES_website\" ls-files backend/node_modules)",
+      "Bash(py --version)",
+      "Bash(python parse_tables.py)",
+      "Bash(node src/server.js)",
+      "Bash(curl -s http://localhost:4000/api/tables)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Total tables:', d['count']\\); [print\\(' -', t['dataset_id'], '|', t['title'][:50]\\) for t in d['tables']]\")",
+      "Bash(curl -s http://localhost:4000/llms.txt)"
     ]
   }
 }
