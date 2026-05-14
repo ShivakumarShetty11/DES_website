@@ -1,0 +1,7 @@
+backend/node_modules
+backend/package-lock.json
+.git
+.gitignore
+.claude
+*.png
+README.md
