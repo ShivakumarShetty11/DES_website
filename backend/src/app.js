@@ -3,6 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const tableRoutes = require("./routes/tableRoutes");
 const publicRoutes = require("./routes/publicRoutes");
+const { createMcpRouter } = require("./mcp");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api", tableRoutes);
+app.use("/mcp", createMcpRouter());
 app.use("/", publicRoutes);
 
 app.use(express.static(path.join(__dirname, "..", "..", "frontend", "public"), {
