@@ -1,0 +1,11 @@
+[    3243ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://console.neon.tech/api/v2/billing/credit_balance:0
+[    3252ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://console.neon.tech/api/v2/users/me/consumption?limit=1000:0
+[    3324ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://console.neon.tech/api/v2/projects?limit=200:0
+[    8671ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://o1373725.ingest.sentry.io/api/6681775/envelope/?sentry_version=7&sentry_key=2d65ecac64634befa77615c9077a289e&sentry_client=sentry.javascript.react%2F8.55.0:0
+[  416590ms] [ERROR] WebSocket connection to 'wss://console.neon.tech/cable' failed: Error during WebSocket handshake: net::ERR_CONNECTION_RESET @ https://dfv3qgd2ykmrx.cloudfront.net/assets/index-BkMHEnu0.js:89
+[  909947ms] [WARNING] Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <button._button_15jn8_3 _button_primary_15jn8_83 _button_m_15jn8_49>
+Ancestor with aria-hidden: <div#root> @ https://console.neon.tech/app/projects/dark-sunset-26959091?branchId=br-silent-moon-aivl7lxj&database=neondb:0
+[  965059ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://console.neon.tech/api/v2/projects/dark-sunset-26959091/integrations/monitoring:0
+[  969216ms] [INFO] 🌐 i18next is maintained with support from Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙 @ https://dfv3qgd2ykmrx.cloudfront.net/assets/index-BkMHEnu0.js:18
+[  970071ms] [LOG] Tables version 1.4.3 @ https://dfv3qgd2ykmrx.cloudfront.net/assets/index-BkMHEnu0.js:18

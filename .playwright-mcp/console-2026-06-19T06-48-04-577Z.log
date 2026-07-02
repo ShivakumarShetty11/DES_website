@@ -1,0 +1,5 @@
+[    2687ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://console.neon.tech/api/v2/billing/credit_balance:0
+[    2707ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://console.neon.tech/api/v2/users/me/consumption?limit=1000:0
+[    2723ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://console.neon.tech/api/v2/projects?limit=200:0
+[    3512ms] [INFO] 🌐 i18next is maintained with support from Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙 @ https://dfv3qgd2ykmrx.cloudfront.net/assets/index-BkMHEnu0.js:18
+[    4523ms] [LOG] Tables version 1.4.3 @ https://dfv3qgd2ykmrx.cloudfront.net/assets/index-BkMHEnu0.js:18

@@ -1,0 +1,406 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - navigation [ref=e468]:
+        - list [ref=e469]:
+          - listitem [ref=e8]:
+            - link [ref=e470] [cursor=pointer]:
+              - /url: /app/
+              - img [ref=e11]
+          - listitem [ref=e13]:
+            - separator [ref=e14]: /
+            - generic [ref=e106]:
+              - link [ref=e471] [cursor=pointer]:
+                - /url: /app/org-steep-star-41235123/projects
+                - generic [ref=e108]: Shiva
+                - generic [ref=e109]: Free
+              - button [ref=e472] [cursor=pointer]:
+                - img [ref=e112]
+          - listitem [ref=e16]:
+            - separator [ref=e17]: /
+            - generic [ref=e114]:
+              - link [ref=e473] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091
+                - generic [ref=e116]: des
+              - button [ref=e474] [cursor=pointer]:
+                - img [ref=e119]
+      - generic [ref=e19]:
+        - link [ref=e475] [cursor=pointer]:
+          - /url: https://neonstatus.com
+          - generic [ref=e123]:
+            - paragraph [ref=e124]
+            - text: All OK
+        - button [ref=e476] [cursor=pointer]:
+          - img [ref=e127]
+          - generic [ref=e129]: Ask AI
+        - button [ref=e477] [cursor=pointer]:
+          - img [ref=e22]
+        - button [ref=e478] [cursor=pointer]:
+          - generic [ref=e131]: Upgrade
+        - button [ref=e479] [cursor=pointer]
+    - generic [ref=e26]:
+      - complementary [ref=e28]:
+        - navigation [ref=e480]:
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - group [ref=e481]:
+                - heading [level=2] [ref=e482]: Project
+                - list [ref=e35]:
+                  - listitem [ref=e36]:
+                    - link [ref=e483]:
+                      - /url: /app/projects/dark-sunset-26959091?branchId=br-silent-moon-aivl7lxj&database=neondb
+                      - img [ref=e40]
+                      - generic [ref=e42]: Dashboard
+                  - listitem [ref=e43]:
+                    - link [ref=e484] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches
+                      - img [ref=e47]
+                      - generic [ref=e49]: Branches
+                  - listitem [ref=e50]:
+                    - link [ref=e485] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/integrations
+                      - img [ref=e54]
+                      - generic [ref=e57]: Integrations
+                  - listitem [ref=e65]:
+                    - link [ref=e486] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/settings
+                      - img [ref=e69]
+                      - generic [ref=e72]: Settings
+              - group [ref=e487]:
+                - heading [level=2] [ref=e488]: Branch
+                - generic [ref=e135]:
+                  - button [ref=e489] [cursor=pointer]:
+                    - img [ref=e138]
+                    - generic [ref=e141]: production
+                    - img [ref=e143]
+                  - combobox [ref=e147]
+                - list [ref=e148]:
+                  - listitem [ref=e149]:
+                    - link [ref=e490] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj
+                      - img [ref=e153]
+                      - generic [ref=e155]: Overview
+                  - listitem [ref=e156]:
+                    - link [ref=e491] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/monitoring
+                      - img [ref=e160]
+                      - generic [ref=e162]: Monitoring
+                  - listitem [ref=e163]:
+                    - link [ref=e492] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/sql-editor?database=neondb
+                      - img [ref=e167]
+                      - generic [ref=e169]: SQL Editor
+                  - listitem [ref=e170]:
+                    - link [ref=e493] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/tables?database=neondb
+                      - img [ref=e174]
+                      - generic [ref=e176]: Tables
+                  - listitem [ref=e177]:
+                    - link [ref=e494] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/restore
+                      - img [ref=e181]
+                      - generic [ref=e184]: Backup & Restore
+                  - listitem [ref=e185]:
+                    - link [ref=e495] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/data-masking
+                      - img [ref=e189]
+                      - generic [ref=e192]: Data Masking
+                      - generic [ref=e193]: Beta
+              - group [ref=e496]:
+                - heading [level=2] [ref=e497]: App backend
+                - list [ref=e197]:
+                  - listitem [ref=e198]:
+                    - link [ref=e498] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/data-api
+                      - img [ref=e202]
+                      - generic [ref=e204]: Data API
+                  - listitem [ref=e205]:
+                    - link [ref=e499] [cursor=pointer]:
+                      - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/auth
+                      - img [ref=e209]
+                      - generic [ref=e211]: Auth
+            - group [ref=e74]:
+              - list [ref=e75]:
+                - listitem [ref=e76]:
+                  - link [ref=e500] [cursor=pointer]:
+                    - img [ref=e80]
+                    - generic [ref=e83]: Feedback
+        - link [ref=e501] [cursor=pointer]:
+          - img [ref=e88]
+          - generic [ref=e90]: Collapse menu
+      - generic [ref=e93]:
+        - banner [ref=e212]:
+          - heading [level=1] [ref=e502]: Project dashboard
+          - generic [ref=e215]:
+            - button [ref=e503] [cursor=pointer]:
+              - img [ref=e218]
+              - generic [ref=e220]: Connect
+            - button [ref=e504] [cursor=pointer]:
+              - img [ref=e223]
+              - generic [ref=e226]: Import data
+            - link [ref=e505] [cursor=pointer]:
+              - /url: /app/org-steep-star-41235123/people?modal=invite_org_members
+              - img [ref=e229]
+              - generic [ref=e231]: Share
+        - generic [ref=e232]:
+          - generic [ref=e233]:
+            - generic [ref=e234]:
+              - heading [level=2] [ref=e506]: Get connected to your new database
+              - link [ref=e507] [cursor=pointer]: Dismiss
+            - generic [ref=e239]:
+              - button [ref=e508] [cursor=pointer]:
+                - img [ref=e243]
+                - generic [ref=e245]:
+                  - img [ref=e247]
+                  - generic [ref=e249]: Connection string
+                - generic [ref=e250]: Copy your project’s connection string and add it to your app config.
+              - button [ref=e509] [cursor=pointer]:
+                - img [ref=e254]
+                - generic [ref=e256]:
+                  - img [ref=e258]
+                  - generic [ref=e260]: Neon init
+                - generic [ref=e261]: Set up your local dev environment with a single command.
+              - button [ref=e510] [cursor=pointer]:
+                - img [ref=e265]
+                - generic [ref=e267]:
+                  - img [ref=e269]
+                  - generic [ref=e271]: IDE extension
+                - generic [ref=e272]: Set up your app with the Neon extension in VS Code or Cursor.
+              - button [ref=e511] [cursor=pointer]:
+                - img [ref=e276]
+                - generic [ref=e278]:
+                  - img [ref=e280]
+                  - generic [ref=e282]: MCP server
+                - generic [ref=e283]: Connect your app to Neon’s MCP server with supported AI tools.
+          - generic [ref=e284]:
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - text: Compute
+                  - img [ref=e289]
+                - generic [ref=e292]:
+                  - generic [ref=e293]: 0 / 100
+                  - generic [ref=e294]: CU-hrs
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - text: Storage
+                  - img [ref=e298]
+                - generic [ref=e301]:
+                  - generic [ref=e302]: 0 / 0.5
+                  - generic [ref=e303]: GB
+              - generic [ref=e304]:
+                - generic [ref=e305]:
+                  - text: History
+                  - img [ref=e307]
+                - generic [ref=e310]:
+                  - generic [ref=e311]: "0"
+                  - generic [ref=e312]: GB
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - text: Network transfer
+                  - img [ref=e316]
+                - generic [ref=e319]:
+                  - generic [ref=e320]: 0 / 5
+                  - generic [ref=e321]: GB
+            - generic [ref=e322]:
+              - text: Usage since Jun 19, 2026. Metrics may be delayed by an hour and are not updated for inactive projects.
+              - link [ref=e516] [cursor=pointer]:
+                - /url: https://neon.com/docs/introduction/plans#usage-metrics
+                - text: Learn more
+              - text: .
+        - generic [ref=e324]:
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - generic [ref=e328]: Monitoring
+              - link [ref=e517] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/branches/br-silent-moon-aivl7lxj/monitoring/metrics
+                - text: View all metrics
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - generic [ref=e334]: Branch
+                  - generic [ref=e336]:
+                    - textbox [ref=e337]
+                    - generic [ref=e338]:
+                      - log [ref=e340]
+                      - generic [ref=e341] [cursor=pointer]:
+                        - generic [ref=e342]:
+                          - generic [ref=e344]:
+                            - generic [ref=e518]: production
+                            - generic [ref=e346]: Default
+                          - combobox [ref=e348]
+                        - img [ref=e351]
+                - generic [ref=e353]:
+                  - generic [ref=e354]: Compute
+                  - generic [ref=e356]:
+                    - textbox [ref=e357]
+                    - generic [ref=e358]:
+                      - log [ref=e360]
+                      - generic [ref=e361] [cursor=pointer]:
+                        - generic [ref=e362]:
+                          - generic [ref=e364]:
+                            - generic [ref=e519]: Primary
+                            - generic [ref=e370]: Idle
+                          - combobox [ref=e372]
+                        - img [ref=e375]
+                - button [ref=e520] [cursor=pointer]:
+                  - img [ref=e380]
+                  - generic [ref=e382]: Refresh
+              - generic [ref=e383]:
+                - img [ref=e385]
+                - generic [ref=e387]: There is no data to display at the moment.
+          - generic [ref=e388]:
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - generic [ref=e393]: 1 / 10 Branch
+                - link [ref=e521] [cursor=pointer]:
+                  - /url: /app/projects/dark-sunset-26959091/branches
+                  - text: View all
+              - generic [ref=e396]:
+                - grid [ref=e522]:
+                  - rowgroup [ref=e401]:
+                    - row [ref=e523]:
+                      - columnheader [ref=e524]:
+                        - generic [ref=e404]: Name
+                      - columnheader [ref=e525]:
+                        - generic [ref=e406]: Primary compute
+                      - columnheader [ref=e526]:
+                        - generic [ref=e408]: Created by
+                  - rowgroup [ref=e409]:
+                    - row [ref=e527]:
+                      - rowheader [ref=e528]:
+                        - generic [ref=e412]:
+                          - img [ref=e414]
+                          - generic [ref=e529]: production
+                          - generic [ref=e417]: Default
+                      - gridcell [ref=e530]:
+                        - link [ref=e531] [cursor=pointer]:
+                          - generic [ref=e421]:
+                            - generic [ref=e422]: .25 ↔ 2 CU
+                            - generic [ref=e426]: Idle
+                      - gridcell [ref=e427]
+                - generic [ref=e431]:
+                  - button [ref=e532] [cursor=pointer]:
+                    - img [ref=e434]
+                  - generic [ref=e436]: Preview Workflow
+                  - paragraph [ref=e437]: You don't have any preview branches yet. Improve your workflow by adding database branching to your development previews.
+                  - button [ref=e533] [cursor=pointer]:
+                    - generic [ref=e439]: Install an integration
+            - generic [ref=e440]:
+              - generic [ref=e441]:
+                - generic [ref=e442]: Project settings
+                - link [ref=e534] [cursor=pointer]:
+                  - /url: /app/projects/dark-sunset-26959091/settings#compute
+                  - text: Manage
+              - table [ref=e447]:
+                - rowgroup [ref=e448]:
+                  - row [ref=e535]:
+                    - cell [ref=e536]: Region
+                    - cell [ref=e537]:
+                      - generic [ref=e453]: AWS US East 1 (N. Virginia)
+                  - row [ref=e538]:
+                    - cell [ref=e539]: Default compute size
+                    - cell [ref=e540]:
+                      - generic [ref=e458]: .25 ↔ 2 CU
+                  - row [ref=e541]:
+                    - cell [ref=e542]: History retention
+                    - cell [ref=e543]:
+                      - generic [ref=e462]: 6 hours
+                  - row [ref=e544]:
+                    - cell [ref=e545]: Postgres version
+                    - cell [ref=e546]: "18"
+              - generic [ref=e466]:
+                - text: To extend the compute size limit,
+                - link [ref=e547] [cursor=pointer]:
+                  - /url: /app/org-steep-star-41235123/billing
+                  - text: upgrade your plan
+  - generic [ref=e549]:
+    - button "Dismiss" [ref=e551] [cursor=pointer]
+    - dialog "Connect to your database" [active] [ref=e552]:
+      - generic [ref=e553]:
+        - heading "Connect to your database" [level=2] [ref=e555]
+        - button [ref=e556] [cursor=pointer]:
+          - img [ref=e558]
+      - generic [ref=e560]:
+        - generic [ref=e562]:
+          - generic [ref=e563]:
+            - generic [ref=e564]:
+              - generic [ref=e565]: Branch
+              - generic [ref=e567]:
+                - textbox [ref=e568]
+                - generic [ref=e569]:
+                  - log [ref=e571]
+                  - generic [ref=e572] [cursor=pointer]:
+                    - generic [ref=e573]:
+                      - generic [ref=e575]:
+                        - generic "production" [ref=e576]
+                        - generic [ref=e577]: Default
+                      - combobox [ref=e579]
+                    - img [ref=e582]
+            - generic [ref=e584]:
+              - generic [ref=e585]: Compute
+              - generic [ref=e587]:
+                - textbox [ref=e588]
+                - generic [ref=e589]:
+                  - log [ref=e591]
+                  - generic [ref=e592] [cursor=pointer]:
+                    - generic [ref=e593]:
+                      - generic [ref=e595]:
+                        - generic "ep-lively-mouse-ai7fz0sr" [ref=e596]: Primary
+                        - generic [ref=e601]: Idle
+                      - combobox [ref=e603]
+                    - img [ref=e606]
+          - generic [ref=e608]:
+            - generic [ref=e609]:
+              - generic [ref=e610]: Database
+              - generic [ref=e612]:
+                - textbox [ref=e613]
+                - generic [ref=e614]:
+                  - log [ref=e616]
+                  - generic [ref=e617] [cursor=pointer]:
+                    - generic [ref=e618]:
+                      - generic [ref=e619]: neondb
+                      - combobox [ref=e621]
+                    - img [ref=e624]
+            - generic [ref=e626]:
+              - generic [ref=e627]: Role
+              - generic [ref=e628]:
+                - link "Reset password" [disabled] [ref=e631]
+                - generic [ref=e632]:
+                  - textbox [ref=e633]
+                  - generic [ref=e634]:
+                    - log [ref=e636]
+                    - generic [ref=e637] [cursor=pointer]:
+                      - generic [ref=e638]:
+                        - generic [ref=e639]: neondb_owner
+                        - combobox [ref=e641]
+                      - img [ref=e644]
+          - generic [ref=e646]:
+            - generic [ref=e647]:
+              - generic [ref=e649]:
+                - textbox [ref=e650]
+                - generic [ref=e651]:
+                  - log [ref=e653]
+                  - generic [ref=e654] [cursor=pointer]:
+                    - generic [ref=e655]:
+                      - generic [ref=e656]: Connection string
+                      - combobox [ref=e657]
+                    - img [ref=e660]
+              - generic [ref=e662]:
+                - generic [ref=e664] [cursor=pointer]:
+                  - switch "Connection pooling" [checked] [ref=e666]
+                  - text: Connection pooling
+                - img [ref=e670]
+            - generic [ref=e676]:
+              - button "Copy snippet" [ref=e678] [cursor=pointer]:
+                - img [ref=e680]
+                - text: Copy snippet
+              - button "Show password" [ref=e683] [cursor=pointer]:
+                - img [ref=e685]
+                - text: Show password
+        - generic [ref=e690]:
+          - text: Your password is saved in a secure storage vault.
+          - link "Learn more about connecting" [ref=e691] [cursor=pointer]:
+            - /url: https://neon.com/docs/connect/connect-intro
+            - text: Learn more about connecting
+            - img [ref=e693]

@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation "Breadcrumbs" [ref=e6]:
+      - list "Breadcrumbs" [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Neon logo" [ref=e9] [cursor=pointer]:
+            - /url: /app/
+            - img [ref=e11]
+        - listitem [ref=e13]:
+          - separator [ref=e14]: /
+        - listitem [ref=e16]:
+          - separator [ref=e17]: /
+    - generic [ref=e19]:
+      - link "All OK" [ref=e20] [cursor=pointer]:
+        - /url: https://neonstatus.com
+        - generic [ref=e22]:
+          - paragraph [ref=e23]
+          - text: All OK
+      - button "Resources menu" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Shiva Kumar account menu button" [ref=e28] [cursor=pointer]
+  - complementary [ref=e32]:
+    - navigation "Sidebar" [ref=e33]:
+      - generic [ref=e34]:
+        - group "Project" [ref=e36]:
+          - heading "Project" [level=2] [ref=e38]
+          - list [ref=e39]:
+            - listitem [ref=e40]:
+              - link "Dashboard" [ref=e42] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091
+                - img [ref=e44]
+                - generic [ref=e46]: Dashboard
+            - listitem [ref=e47]:
+              - link "Branches" [ref=e49] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/branches
+                - img [ref=e51]
+                - generic [ref=e53]: Branches
+            - listitem [ref=e54]:
+              - link "Integrations" [ref=e56] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/integrations
+                - img [ref=e58]
+                - generic [ref=e61]: Integrations
+            - listitem [ref=e62]:
+              - link "Auth" [ref=e64] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/auth
+                - img [ref=e66]
+                - generic [ref=e68]: Auth
+            - listitem [ref=e69]:
+              - link "Settings" [ref=e71] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/settings
+                - img [ref=e73]
+                - generic [ref=e76]: Settings
+        - group [ref=e78]:
+          - list [ref=e79]:
+            - listitem [ref=e80]:
+              - link "Feedback" [ref=e82] [cursor=pointer]:
+                - img [ref=e84]
+                - generic [ref=e87]: Feedback
+    - link "Collapse menu" [ref=e90] [cursor=pointer]:
+      - img [ref=e92]
+      - generic [ref=e94]: Collapse menu

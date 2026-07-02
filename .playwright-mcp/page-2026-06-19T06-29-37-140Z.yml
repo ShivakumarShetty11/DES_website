@@ -1,0 +1,56 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation "Breadcrumbs" [ref=e6]:
+      - list "Breadcrumbs" [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Neon logo" [ref=e9] [cursor=pointer]:
+            - /url: /app/
+            - img [ref=e11]
+        - listitem [ref=e13]:
+          - separator [ref=e14]: /
+        - listitem [ref=e16]:
+          - separator [ref=e17]: /
+    - generic [ref=e19]:
+      - button "Resources menu" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Shiva Kumar account menu button" [ref=e24] [cursor=pointer]
+  - complementary [ref=e28]:
+    - navigation "Sidebar" [ref=e29]:
+      - generic [ref=e30]:
+        - group "Project" [ref=e32]:
+          - heading "Project" [level=2] [ref=e34]
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Dashboard" [ref=e38]:
+                - /url: /app/projects/dark-sunset-26959091?branchId=br-silent-moon-aivl7lxj
+                - img [ref=e40]
+                - generic [ref=e42]: Dashboard
+            - listitem [ref=e43]:
+              - link "Branches" [ref=e45] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/branches
+                - img [ref=e47]
+                - generic [ref=e49]: Branches
+            - listitem [ref=e50]:
+              - link "Integrations" [ref=e52] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/integrations
+                - img [ref=e54]
+                - generic [ref=e57]: Integrations
+            - listitem [ref=e58]:
+              - link "Auth" [ref=e60] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/auth
+                - img [ref=e62]
+                - generic [ref=e64]: Auth
+            - listitem [ref=e65]:
+              - link "Settings" [ref=e67] [cursor=pointer]:
+                - /url: /app/projects/dark-sunset-26959091/settings
+                - img [ref=e69]
+                - generic [ref=e72]: Settings
+        - group [ref=e74]:
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "Feedback" [ref=e78] [cursor=pointer]:
+                - img [ref=e80]
+                - generic [ref=e83]: Feedback
+    - link "Collapse menu" [ref=e86] [cursor=pointer]:
+      - img [ref=e88]
+      - generic [ref=e90]: Collapse menu
