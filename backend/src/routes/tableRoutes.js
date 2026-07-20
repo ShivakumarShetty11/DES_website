@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const {
   getTableSummaries,
   getTableById,
@@ -7,6 +6,7 @@ const {
   getMetadataById,
   getMetadataExcelPath
 } = require("../services/tableRepository");
+const { signGcsUrl } = require("../gcs");
 
 const router = express.Router();
 
@@ -135,15 +135,13 @@ router.get("/metadata/:metadataId", async (req, res, next) => {
 
 router.get("/metadata/:metadataId/download", async (req, res, next) => {
   try {
-    const filePath = await getMetadataExcelPath(req.params.metadataId);
-    if (!filePath) {
+    const value = await getMetadataExcelPath(req.params.metadataId);
+    if (!value) {
       res.status(404).json({ message: `No metadata file for: ${req.params.metadataId}` });
       return;
     }
-    const filename = path.basename(filePath);
-    res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
-    res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-    res.sendFile(filePath);
+    const url = value.startsWith("gs://") ? await signGcsUrl(value) : value;
+    res.redirect(url);
   } catch (error) {
     next(error);
   }

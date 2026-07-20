@@ -1,7 +1,4 @@
-const path = require("path");
 const pool = require("../db");
-
-const METADATA_DIR = path.join(__dirname, "..", "..", "data", "metadata");
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -136,7 +133,7 @@ async function getMetadataExcelPath(metadataId) {
     [wanted]
   );
   if (!rows.length || !rows[0].metadata_excel) return null;
-  return path.join(METADATA_DIR, rows[0].metadata_excel);
+  return rows[0].metadata_excel;
 }
 
 // warmCache kept for API compatibility — PostgreSQL has its own connection pool
