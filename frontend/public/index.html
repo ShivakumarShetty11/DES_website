@@ -44,7 +44,45 @@
           <option>DES — Delhi Vital Statistics</option>
         </select>
       </div>
+      <div class="topnav-divider"></div>
+      <button class="btn btn-mcp" id="mcpBtn">MCP Endpoint</button>
     </header>
+
+    <dialog id="mcpModal" class="mcp-modal">
+      <div class="mcp-modal-inner">
+        <div class="mcp-modal-header">
+          <h2>Connect to Claude via MCP</h2>
+          <button class="mcp-close-btn" id="mcpCloseBtn" aria-label="Close">&times;</button>
+        </div>
+
+        <p class="muted">Use this server to give Claude direct access to all DES datasets.</p>
+
+        <div class="mcp-section">
+          <label class="mcp-label">MCP Endpoint</label>
+          <div class="api-endpoint-row">
+            <code class="api-endpoint-url" id="mcpEndpointUrl"></code>
+            <button class="btn btn-secondary" id="mcpCopyBtn">Copy</button>
+          </div>
+        </div>
+
+        <div class="mcp-section">
+          <label class="mcp-label">Claude Desktop</label>
+          <ol class="mcp-steps">
+            <li>Open Claude Desktop → <strong>Settings</strong> → <strong>Developer</strong> → <strong>Edit Config</strong></li>
+            <li>Add the following to <code>claude_desktop_config.json</code>:</li>
+          </ol>
+          <pre class="mcp-code" id="mcpDesktopConfig"></pre>
+        </div>
+
+        <div class="mcp-section">
+          <label class="mcp-label">Claude Code (CLI)</label>
+          <ol class="mcp-steps">
+            <li>Run this command in your terminal:</li>
+          </ol>
+          <pre class="mcp-code" id="mcpCliCmd"></pre>
+        </div>
+      </div>
+    </dialog>
     <main class="layout">
       <section class="card query-panel" id="queryPanel">
         <p class="search-label">Search Datasets</p>

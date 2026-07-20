@@ -1,4 +1,5 @@
 const API_BASE = "/api";
+const MCP_ENDPOINT = `${window.location.origin}/mcp`;
 
 const elements = {
   datasetStream: document.getElementById("datasetStream"),
@@ -14,6 +15,7 @@ const state = {
 };
 
 init();
+initMcpModal();
 
 async function init() {
   try {
@@ -92,7 +94,8 @@ function renderDatasetRow(data, key, query) {
 
         <div class="action-row">
           <button class="btn btn-secondary panel-btn" data-dataset-key="${key}" data-view="catalog" aria-pressed="false">Meta Data Summary</button>
-          <button class="btn btn-primary panel-btn" data-dataset-key="${key}" data-view="download" aria-pressed="false">Download Dataset</button>
+          <button class="btn btn-secondary panel-btn" data-dataset-key="${key}" data-view="api" aria-pressed="false">API Endpoint</button>
+          <button class="btn btn-primary download-xlsx" data-dataset-key="${key}">Download Dataset</button>
           ${metadataExcel ? `<button class="btn btn-secondary download-metadata-btn" data-metadata-id="${escapeHtml(dataset.metadata_id)}">Download Metadata</button>` : ""}
         </div>
 
@@ -107,15 +110,15 @@ function renderDatasetRow(data, key, query) {
             <dl>${renderCatalog(data)}</dl>
           </section>
 
-          <section class="panel-view" data-view="download">
-            <h3>Download Dataset</h3>
-            <p class="muted">Choose format to export this dataset.</p>
-            <div class="download-row">
-              <button class="btn btn-secondary download-json" data-dataset-key="${key}">Download JSON</button>
-              <button class="btn btn-primary download-csv" data-dataset-key="${key}">Download CSV</button>
-              <button class="btn btn-secondary download-xlsx" data-dataset-key="${key}">Download Excel</button>
+          <section class="panel-view" data-view="api">
+            <h3>API Endpoint</h3>
+            <p class="muted">Use this URL to fetch the full dataset programmatically.</p>
+            <div class="api-endpoint-row">
+              <code class="api-endpoint-url">${escapeHtml(`${window.location.origin}/api/tables/${encodeURIComponent(dataset.dataset_id)}`)}</code>
+              <button class="btn btn-secondary copy-endpoint-btn" data-endpoint="${escapeHtml(`${window.location.origin}/api/tables/${encodeURIComponent(dataset.dataset_id)}`)}" onclick="navigator.clipboard.writeText(this.dataset.endpoint).then(()=>{this.textContent='Copied!';setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
             </div>
           </section>
+
         </section>
       </article>
     </section>
@@ -125,29 +128,6 @@ function renderDatasetRow(data, key, query) {
 function attachEventHandlers() {
   document.querySelectorAll(".panel-btn").forEach((button) => {
     button.addEventListener("click", onPanelButtonClick);
-  });
-
-  document.querySelectorAll(".download-json").forEach((button) => {
-    button.addEventListener("click", () => {
-      const key = button.dataset.datasetKey;
-      const data = state.datasetsByKey.get(key);
-      if (!data) {
-        return;
-      }
-      downloadBlob(JSON.stringify(data, null, 2), `${data.dataset.unique_dataset_id || data.dataset.dataset_id}.json`, "application/json");
-    });
-  });
-
-  document.querySelectorAll(".download-csv").forEach((button) => {
-    button.addEventListener("click", () => {
-      const key = button.dataset.datasetKey;
-      const data = state.datasetsByKey.get(key);
-      if (!data) {
-        return;
-      }
-      const csv = generateCsv(data.table.rows || []);
-      downloadBlob(csv, `${data.dataset.unique_dataset_id || data.dataset.dataset_id}.csv`, "text/csv");
-    });
   });
 
   document.querySelectorAll(".download-xlsx").forEach((button) => {
@@ -422,6 +402,35 @@ function downloadExcel(rows, data) {
   const workbook = window.XLSX.utils.book_new();
   window.XLSX.utils.book_append_sheet(workbook, worksheet, "Table_Data");
   window.XLSX.writeFile(workbook, `${data.dataset.unique_dataset_id || data.dataset.dataset_id}.xlsx`);
+}
+
+function initMcpModal() {
+  const modal = document.getElementById("mcpModal");
+  const openBtn = document.getElementById("mcpBtn");
+  const closeBtn = document.getElementById("mcpCloseBtn");
+  const copyBtn = document.getElementById("mcpCopyBtn");
+
+  document.getElementById("mcpEndpointUrl").textContent = MCP_ENDPOINT;
+
+  document.getElementById("mcpDesktopConfig").textContent = JSON.stringify(
+    { mcpServers: { "des-data-catalog": { type: "http", url: MCP_ENDPOINT } } },
+    null,
+    2
+  );
+
+  document.getElementById("mcpCliCmd").textContent =
+    `claude mcp add --transport http des-data-catalog ${MCP_ENDPOINT}`;
+
+  openBtn.addEventListener("click", () => modal.showModal());
+  closeBtn.addEventListener("click", () => modal.close());
+  modal.addEventListener("click", (e) => { if (e.target === modal) modal.close(); });
+
+  copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(MCP_ENDPOINT).then(() => {
+      copyBtn.textContent = "Copied!";
+      setTimeout(() => { copyBtn.textContent = "Copy"; }, 1500);
+    });
+  });
 }
 
 function escapeHtml(value) {
