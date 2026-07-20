@@ -6,7 +6,7 @@ const {
   getMetadataById,
   getMetadataExcelPath
 } = require("../services/tableRepository");
-const { signGcsUrl } = require("../gcs");
+const { streamGcsFile } = require("../gcs");
 
 const router = express.Router();
 
@@ -140,8 +140,11 @@ router.get("/metadata/:metadataId/download", async (req, res, next) => {
       res.status(404).json({ message: `No metadata file for: ${req.params.metadataId}` });
       return;
     }
-    const url = value.startsWith("gs://") ? await signGcsUrl(value) : value;
-    res.redirect(url);
+    if (value.startsWith("gs://")) {
+      streamGcsFile(value, res);
+      return;
+    }
+    res.redirect(value);
   } catch (error) {
     next(error);
   }
