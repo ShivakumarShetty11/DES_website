@@ -112,9 +112,14 @@ async function getTableById(datasetId) {
 
 async function getAllMetadata() {
   const { rows } = await pool.query(`
-    SELECT full_record FROM metadata_groups ORDER BY metadata_id
+    SELECT metadata_id, title, description, product, category, geography,
+           frequency, time_period, data_source, last_updated_date,
+           future_release, key_statistics, remarks, table_ids,
+           classifications, concepts
+    FROM metadata_groups
+    ORDER BY metadata_id
   `);
-  return rows.map((r) => r.full_record);
+  return rows;
 }
 
 async function getMetadataById(metadataId) {

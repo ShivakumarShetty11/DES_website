@@ -97,22 +97,22 @@ router.get("/metadata", async (_req, res, next) => {
     res.json({
       count: records.length,
       metadata: records.map((r) => ({
-        metadata_id: r?.metadata?.metadata_id,
-        title: r?.metadata?.title,
-        product: r?.metadata?.product,
-        description: r?.metadata?.description,
-        category: r?.metadata?.category,
-        geography: r?.metadata?.geography,
-        frequency: r?.metadata?.frequency,
-        time_period: r?.metadata?.time_period,
-        data_source: r?.metadata?.data_source,
-        last_updated_date: r?.metadata?.last_updated_date,
-        future_release: r?.metadata?.future_release,
-        key_statistics: r?.metadata?.key_statistics,
-        remarks: r?.metadata?.remarks,
-        table_ids: r?.metadata?.table_ids || [],
-        classifications: r?.classifications || {},
-        concepts: r?.concepts || []
+        metadata_id: r.metadata_id,
+        title: r.title,
+        product: r.product,
+        description: r.description,
+        category: r.category,
+        geography: r.geography,
+        frequency: r.frequency,
+        time_period: r.time_period,
+        data_source: r.data_source,
+        last_updated_date: r.last_updated_date,
+        future_release: r.future_release,
+        key_statistics: r.key_statistics,
+        remarks: r.remarks,
+        table_ids: r.table_ids || [],
+        classifications: r.classifications || {},
+        concepts: r.concepts || []
       }))
     });
   } catch (error) {
