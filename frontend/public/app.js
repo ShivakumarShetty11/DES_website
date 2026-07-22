@@ -287,20 +287,19 @@ function onPanelButtonClick(event) {
 
 function renderCatalog(data) {
   const dataset = data?.dataset || {};
-  const catalog = data?.metadata?.catalog_metadata_tab || {};
 
   const pairs = [
-    ["Product", catalog.product || dataset.product],
-    ["Category", catalog.category || dataset.category],
-    ["Geography", catalog.geography || dataset.geography],
-    ["Frequency", catalog.frequency || dataset.frequency],
-    ["Time Period", catalog.time_period || dataset.time_period],
-    ["Source", catalog.data_source || dataset.data_source],
-    ["Description", catalog.description || data?.metadata?.description],
-    ["Last Updated", catalog.last_updated_date || dataset.last_updated_date],
-    ["Future Release", catalog.future_release || data?.metadata?.future_release],
-    ["Key Statistics", catalog.key_statistics || data?.metadata?.key_statistics],
-    ["Remarks", catalog.remarks || data?.metadata?.remarks]
+    ["Product", dataset.product],
+    ["Category", dataset.category],
+    ["Geography", dataset.geography],
+    ["Frequency", dataset.frequency],
+    ["Time Period", dataset.time_period],
+    ["Source", dataset.data_source],
+    ["Description", dataset.description],
+    ["Last Updated", dataset.last_updated_date],
+    ["Future Release", dataset.future_release],
+    ["Key Statistics", dataset.key_statistics],
+    ["Remarks", dataset.remarks]
   ];
 
   return pairs
